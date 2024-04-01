@@ -416,6 +416,15 @@ class API(object):
         url_query = {}
         url_params = {"query": query}
         return self._make_request(endpoint, method="GET", query_=url_query, params_=url_params)
+        
+    def search_restaurants(self, lat=None, lng=None, **kwargs):
+        """ Search through thousands of restaurants (in North America) by location, cuisine, budget, and more.
+            https://spoonacular.com/food-api/docs#Search-Restaurants
+        """
+        endpoint = "food/restaurants/search"
+        url_query = {}
+        url_params = {"lat":lat, "lng":lng, **kwargs}
+        return self._make_request(endpoint, method="GET", query_=url_query, params_=url_params)
 
     """ --------------- CHAT Endpoints --------------- """
 
