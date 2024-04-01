@@ -16,7 +16,7 @@ Thank you to [@sebbekarlsson](https://github.com/sebbekarlsson) for transferring
 If you'd prefer to clone and install the repository manually, follow these steps:
 
 1. Clone this repo:
-`$git clone https://github.com/johnwmillr/SpoonacularAPI.git`
+`$git clone https://github.com/hchiang9/SpoonacularAPI.git`
 2. Enter the cloned directory:
 `$cd SpoonacularAPI`
 3. Install:
