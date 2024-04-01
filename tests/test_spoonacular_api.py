@@ -241,7 +241,14 @@ class TestAPI(unittest.TestCase):
         testArgs = {'query': 'past'}
         response = self.api.search_site_content(**testArgs)
         self.assertEqual(response.status_code, 200, msg)
-
+        
+    def search_restaurants(self):
+        """Test the 'search restaurants' endpoint (GET)"""
+        msg = "Response status is not 200"
+        testArgs = {'lat':'43.00441722228767','lng':'-81.27617531329763'}
+        response = self.api.search_restaurants(**testArgs)
+        self.assertEqual(response.status_code,200,msg)
+    
     """ --------------- Chat Endpoints --------------- """
 
     def test_get_conversation_suggests(self):
