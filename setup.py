@@ -32,7 +32,7 @@ setup(name="spoonacular",
       packages=find_packages(exclude=['tests']),
       install_requires=["requests"],
       keywords="spoonacular API food recipes ingredients cuisine groceries",
-      python_requires=">=3.*",
+      python_requires=">=3",
       classifiers=[
               'Topic :: Software Development :: Libraries',
           'Operating System :: OS Independent',
