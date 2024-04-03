@@ -4,29 +4,37 @@
 [![PyPI version](https://badge.fury.io/py/spoonacular.svg)](https://pypi.org/project/spoonacular/)
 [![Python version](https://img.shields.io/badge/python-3.x-brightgreen.svg)](https://pypi.org/project/spoonacular/)
 
-Want to parse a list of [ingredients](https://rapidapi.com/spoonacular/api/Recipe%20-%20Food%20-%20Nutrition/functions/Parse%20Ingredients) within a recipe? Or are you looking for a random [food joke](https://rapidapi.com/spoonacular/api/Recipe%20-%20Food%20-%20Nutrition/functions/Get%20a%20Random%20Food%20Joke)? These are just two of many endpoints provided by the marvelous [Spoonacular](https://spoonacular.com/) food and recipes API. `spoonacular` provides a simple Python interface to this API. **This fork by hchiang9 adds search-restaurant API call functionality via [Spoonacular](https://spoonacular.com/food-api/docs#Search-Restaurants). All rights belong to the original SDK developer and Spoonacular API** 
+Want to parse a list of [ingredients](https://rapidapi.com/spoonacular/api/Recipe%20-%20Food%20-%20Nutrition/functions/Parse%20Ingredients) within a recipe? Or are you looking for a random [food joke](https://rapidapi.com/spoonacular/api/Recipe%20-%20Food%20-%20Nutrition/functions/Get%20a%20Random%20Food%20Joke)? These are just two of many endpoints provided by the marvelous [Spoonacular](https://spoonacular.com/) food and recipes API. `spoonacular` provides a simple Python interface to this API. **This fork by hchiang9 adds search-restaurant API call functionality via [Spoonacular](https://spoonacular.com/food-api/docs#Search-Restaurants). All rights belong to the original SDK developer and Spoonacular API.** 
 
 ## Installation
-The easiest way to start using this package is to install it via [PyPI](https://pypi.python.org/pypi/spoonacular) using `pip`:
+~~The easiest way to start using this package is to install it via [PyPI](https://pypi.python.org/pypi/spoonacular) using `pip`:~~
 
-`$pip install spoonacular`
+~~`$pip install spoonacular`~~
 
-Thank you to [@sebbekarlsson](https://github.com/sebbekarlsson) for transferring ownership of the original PyPI package name.
+~~Thank you to [@sebbekarlsson](https://github.com/sebbekarlsson) for transferring ownership of the original PyPI package name.~~ **You need to install manually as the PyPI package does not have the search-restaurant API call code.**
 
-If you'd prefer to clone and install the repository manually, follow these steps:
+If you'd prefer to clone and install the repository manually, follow these steps.
+
+**For Windows CMD prompt:**
 
 1. Clone this repo:
-`$git clone https://github.com/hchiang9/SpoonacularAPI.git`
+`git clone https://github.com/hchiang9/SpoonacularAPI.git`
 2. Enter the cloned directory:
-`$cd SpoonacularAPI`
+`cd SpoonacularAPI`
 3. Install:
-    `$python setup.py install`
+`py setup.py install`
+
+*OR* 
+
+**Using Anaconda Prompt and pip**
+1. Open Anaconda Prompt from Windows search
+2. Run: `pip install git+https://github.com/hchiang9/SpoonacularAPI`
 
 ## Usage
 
 ### API Key
 
-You'll need to sign up for an account on [RapidAPI](https://rapidapi.com/spoonacular/api/Recipe%20-%20Food%20-%20Nutrition/pricing) to start using `spoonacular`. Spoonacular is a freemium API, so you'll be able to start with 50 free calls a day. Registration requires a credit card number even for the free plan, because users are charged a small amount per call if they go over the daily limit. This package has a basic system in place to try and prevent overrage charges.
+~~You'll need to sign up for an account on [RapidAPI](https://rapidapi.com/spoonacular/api/Recipe%20-%20Food%20-%20Nutrition/pricing) to start using `spoonacular`. Spoonacular is a freemium API, so you'll be able to start with 50 free calls a day. Registration requires a credit card number even for the free plan, because users are charged a small amount per call if they go over the daily limit. This package has a basic system in place to try and prevent overrage charges.~~ **Sign up for an account on the official Spoonacular API [website](https://spoonacular.com/food-api). Check the website for up-to-date limits and rates on API calls.**
 
 ### Examples
 
